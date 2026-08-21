@@ -1,15 +1,16 @@
 FROM node:26-alpine3.23
 
+# Install curl for container health checks in ECS
 RUN apk add --no-cache curl
 
 WORKDIR /app
 
 COPY package*.json ./
 
-COPY server.js ./
-
 RUN npm install
+
+COPY . .
 
 EXPOSE 8000
 
-CMD [ "node", "server.js" ]
+CMD [ "npm", "start" ]

@@ -1,4 +1,6 @@
-# Dockerized Express Application
+# AWS ECS Fargate CI/CD Pipeline
+
+## A Dockerized Node.js application deployed to Amazon ECS Fargate through a GitHub Actions CI/CD pipeline.
 
 This project is a Node.js and Express API packaged as a Docker container. It provides a basic application endpoint and a dedicated health endpoint that can be used to check whether the service is running correctly.
 

@@ -9,7 +9,7 @@ app.use(express.json())
 app.use(cors())
 
 app.get("/", (req, res) => {
-    res.send("server is running")
+    res.send("server is running at docker container")
 })
 
 app.listen(PORT, () => {

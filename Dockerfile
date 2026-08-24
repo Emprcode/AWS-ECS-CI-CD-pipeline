@@ -1,7 +1,7 @@
 FROM node:26-alpine3.23
 
 # Install curl for container health checks in ECS
-RUN apk add --no-cache curl
+# RUN apk add --no-cache curl
 
 WORKDIR /app
 
